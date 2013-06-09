@@ -1,0 +1,43 @@
+<!-- bqupload.html
+  @author: Brian Quach
+  @date: 05 December 2012
+  @purpose: Create a simple file uploader, using AJAX
+-->
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Brian Quach's QuickUploader</title>
+   <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+   <link href="css/uploader.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+   <div id="description">
+      <h1>Brian Quach's QuickUploader</h1>
+      <h2>Using HTML5 (FileReader), CSS3,  jQuery 1.8, and PHP5</h2>
+   </div>
+
+   <div id="upload-form">
+      <h2>QuickUploader</h2>
+      <form name="bq-upload" action="upload_fancy.php" enctype="multipart/form-data" id="bq-upload">
+         <input type="file" name="file" id="file" value="Browse" multiple><br>
+         <label for="file">(max 50KB per file)</label>
+         <input type="button" name="submit" value="Submit" id="submit">
+      </form>
+      <!-- div to update when files are uploaded -->
+      <div id="upload-info">
+         Select files to begin uploading!
+      </div>
+   </div>
+
+   <!-- div to update with directory listing -->
+   <div id="dir-list">
+      Loading files listed under upload/
+   </div>
+</div>
+</body>
+<script src="js/jquery-1.8.3.js" type="text/javascript"></script>
+<script src="js/upload.js" type="text/javascript"></script>
+
+</html>

@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* clear formatting */
+* {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+/* grab desired webfont */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+
+/* IDs */
+#container {
+   width: 700px;
+   margin: 0 auto;
+   padding: 10px;
+   font-family: "Ubuntu", sans-serif;
+}
+
+#description {
+   width: 700px;
+   float: left;
+   margin-bottom: 20px;
+   border-bottom: 2px solid #999999;
+}
+
+#upload-form {
+   width: 250px;
+   height: auto;
+   float: right;
+   padding: 10px;
+   background: #333333;
+}
+
+#upload-form h2 {
+   margin-bottom: 5px;
+   border-bottom: 1px solid #0B93D5;
+}
+
+/* stylize directory info */
+#dir-list {
+   width: 400px;
+   float: left;
+   background: #333333;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   border-bottom-left-radius: 3px;
+   border-bottom-right-radius: 3px;
+   padding-bottom: 10px;
+}
+
+#dir-list h1 {
+   border: 1px solid #0B93D5;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   border-bottom: 1px solid #0680C0;
+   background: #003147; 
+   padding-left: 5px;
+   font-size: 24px;
+}
+
+#dir-list ul {
+   width: 380px;
+   margin: 0 auto;
+}
+
+/* create "tab" graphics */
+#dir-list ul li:nth-child(odd) {
+   width: 305px;
+   background: #AAAAAA;
+   float: left;
+   padding: 0 0 0 45px;
+   position: relative;
+   border-top-left-radius: 0.5em;
+   border-bottom-left-radius: 0.5em;
+}
+
+#dir-list ul li:nth-child(even) {
+   width: 305px;
+   background: #CCCCCC;
+   text-align: right;
+   float: right;
+   padding: 0 45px 0 0;
+   position: relative;
+   border-top-right-radius: 0.5em;
+   border-bottom-right-radius: 0.5em;
+}
+
+/* tags */
+body {
+   background: #000000;
+   color: #0077BB;a
+   font-family: 'Ubuntu', sans-serif;
+}
+
+/* Classes */
+.file {
+   list-style: none;
+}
+
